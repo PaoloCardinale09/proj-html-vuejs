@@ -32,3 +32,9 @@ header {
   background-repeat: no-repeat;
   background-size: 40%;
 }
+
+/******** SECTION OUR PROCESS ********/
+#our-process--left > img {
+  height: 43rem;
+  margin-left: -18rem;
+}
