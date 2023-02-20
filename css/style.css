@@ -38,3 +38,18 @@ header {
   height: 43rem;
   margin-left: -18rem;
 }
+
+/******** TEAM MEMBERS ********/
+.team-members--card {
+  width: 32%;
+  background-color: antiquewhite;
+}
+.team-members--card > img {
+  position: relative;
+  top: -4rem;
+}
+
+/******** OUR CLIENTS ********/
+#our-clients img {
+  width: 100%;
+}
