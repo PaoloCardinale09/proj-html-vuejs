@@ -1,0 +1,22 @@
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+/********* GENERICS *********/
+.family-text-title {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.dbg {
+  border: 2px dashed red;
+}
+
+/******** HEADER ********/
+header {
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.jumbotron--image > img {
+  width: 100%;
+}
