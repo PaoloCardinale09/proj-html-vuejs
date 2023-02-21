@@ -155,7 +155,39 @@ header {
   height: 43rem;
   margin-left: -18rem;
 }
+#our-process {
+  color: #311852;
+}
 
+.our-process--single-card {
+  border: 1px solid #ffdfee;
+  border-radius: 25px;
+  width: 48%;
+  position: relative;
+}
+
+.my-badge {
+  position: absolute;
+  top: 0px;
+  right: 17px;
+  background-color: #f7f1ff;
+  padding: 2rem 0.9rem 0.3rem 0.9rem;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: #8d829d;
+}
+
+.my-arrow {
+  border-radius: 50%;
+  border: 1px solid #dedee2;
+  color: #9f9ea2;
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+}
 /******** TEAM MEMBERS ********/
 .team-members--card {
   width: 32%;
