@@ -1,6 +1,7 @@
 body {
   font-family: "Barlow", sans-serif;
   position: relative;
+  /* background-color: red; */
 }
 
 /********* GENERICS *********/
@@ -66,19 +67,21 @@ header {
     url(../img/assets/light.png), url(../img/assets/preloader.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
     no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 11rem, 11rem, 40rem, 40rem, 6rem, 6rem, 15rem, 7rem, 90rem;
-  background-position: 98% 20%, 2% 20%, 100% 15%, 0% 35%, 8% 13%, 73% 16%,
-    45% -22%, 90% 12%, 0% 0%;
+  background-size: 14rem, 14rem, 40rem, 40rem, 6rem, 6rem, 15rem, 7rem, 100%;
+  background-position: 98% 20%, 2% 20%, 100% 15%, 0% 35%, 12% 10%, 73% 16%,
+    45% -18%, 90% 12%, 0% 0%;
 }
 /********* JUMBOTRON *********/
 #jumbotron {
   color: #ffdfee;
+  position: relative;
 }
 .jumbotron--image > img {
   width: 100%;
 }
 
 .jumbotron--image {
+  z-index: 2;
   position: relative;
 }
 .play-logo {
@@ -97,14 +100,20 @@ header {
   outline: 0.7rem solid #9d15df;
   outline-offset: -1px;
 }
+.merlo {
+  position: absolute;
+  bottom: 29rem;
+  left: 0;
+}
 
 /******** SECTION OUR LOVE ********/
 #our-love {
-  background-image: url(../img/assets/smart.png), url(../img/assets/smart4.png);
-  background-position: -2rem 0, 2rem 10rem;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 26rem 47rem, 10rem;
+  background-image: url(../img/assets/smart.png);
+  background-position: 0% 34%;
+  background-repeat: no-repeat;
+  background-size: 33rem 52rem;
   color: #311852;
+  position: relative;
 }
 
 .our-love--single-card {
@@ -118,13 +127,23 @@ header {
   background: linear-gradient(#fffefd, #efebfc);
 }
 
+.our-love--spaceship {
+  position: absolute;
+  right: 4rem;
+  bottom: -2rem;
+  transform: scaleX(1.5);
+}
+.our-love--spaceship img {
+  height: 8rem;
+}
+
 /******** QUICK FACTS SECTION ********/
 #quick-facts {
   background-image: url(../img/assets/globe.png),
     url(../img/assets/counter-bg.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 25rem, auto;
-  background-position: 25rem 2rem, 0 0;
+  background-position: 50% 2rem, 0 0;
   position: relative;
   color: #f7f0ff;
 }
@@ -161,6 +180,16 @@ header {
 }
 #our-process {
   color: #311852;
+  position: relative;
+}
+.our-process--spaceship {
+  position: absolute;
+  right: -44rem;
+  bottom: 6rem;
+  transform: scaleX(1.5);
+}
+.our-process--spaceship > img {
+  height: 8rem;
 }
 
 .our-process--single-card {
@@ -196,8 +225,8 @@ header {
 #team-members {
   background-image: url(../img/assets/shape.png), url(../img/assets/shape2.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 7rem, 35rem 2rem;
-  background-size: 36rem, 36rem;
+  background-position: 7% 35%, 100% 3%;
+  background-size: 40rem, 40rem;
 }
 .team-members--card {
   width: 32%;
