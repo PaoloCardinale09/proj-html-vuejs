@@ -53,3 +53,43 @@ header {
 #our-clients img {
   width: 100%;
 }
+
+.buttonIn {
+  width: 66%;
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+
+#enter {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border-radius: 5px;
+  height: 3.5rem;
+  border-radius: 25px;
+  border: transparent;
+  width: 45rem;
+}
+
+#clear {
+  position: absolute;
+  top: 0;
+  border-radius: 35px;
+  right: 12px;
+  z-index: 2;
+  border: none;
+  top: 8px;
+  height: 41px;
+  cursor: pointer;
+  color: white;
+  background-color: #1e90ff;
+  transform: translateX(4px);
+}
+
+/******** go start arrow bottom right ********/
+
+.go-start {
+  position: absolute;
+  right: 1rem;
+}
