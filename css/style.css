@@ -15,14 +15,78 @@ h2 {
   border: 2px dashed red;
 }
 
+.my-light-button {
+  height: fit-content;
+  align-self: center;
+  padding: 0.5rem 1.5rem;
+  background-color: #ffdfee;
+  color: #1f152f;
+  border: transparent;
+  font-weight: 600;
+  border-radius: 50rem;
+}
+
+.my-dark-button {
+  height: fit-content;
+  align-self: center;
+  padding: 0.5rem 1.5rem;
+  background-color: #270264;
+  color: #f7f0ff;
+  border-color: #f7f0ff;
+  font-weight: 600;
+  border-radius: 50rem;
+}
+
 /******** HEADER ********/
 header {
   height: 5rem;
   line-height: 5rem;
+  color: #f7f0ff;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
 }
 
+#background-header-jumbotron {
+  background-image: url(../img/assets/right-man.png),
+    url(../img/assets/left-man.png), url(../img/assets/dots-right.png),
+    url(../img/assets/dots-left.png), url(../img/assets/globe1.png),
+    url(../img/assets/globe2.png), url(../img/assets/globe3.png),
+    url(../img/assets/light.png), url(../img/assets/preloader.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 11rem, 11rem, 40rem, 40rem, 6rem, 6rem, 15rem, 7rem, 90rem;
+  background-position: 98% 20%, 2% 20%, 100% 15%, 0% 35%, 8% 13%, 73% 16%,
+    45% -22%, 90% 12%, 0% 0%;
+}
+/********* JUMBOTRON *********/
+#jumbotron {
+  color: #ffdfee;
+}
 .jumbotron--image > img {
   width: 100%;
+}
+
+.jumbotron--image {
+  position: relative;
+}
+.play-logo {
+  font-size: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prova {
+  color: #a616eb;
+  background-color: #f7f0ff;
+  border-radius: 50%;
+  outline: 0.7rem solid #9d15df;
+  outline-offset: -1px;
+}
+.jumbotron--text > .orange-text {
+  color: #ff7b1f;
 }
 
 /******** SECTION OUR LOVE ********/
@@ -87,7 +151,7 @@ header {
   transform: translateX(4px);
 }
 
-/******** go start arrow bottom right ********/
+/********  bottom right arrow ********/
 
 .go-start {
   position: absolute;

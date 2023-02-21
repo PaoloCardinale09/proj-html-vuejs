@@ -40,44 +40,56 @@
 
   <body>
     <div id="app">
-      <!-- START HEADER -->
-      <header id="header" class="d-flex align-items-center dbg">
-        <div class="container d-flex">
-          <div class="header--wrap-logo dbg">
-            <div class="logo">logo</div>
-          </div>
-          <div class="header--wrap-link d-flex gap-2 ms-auto dbg">
-            <div>link</div>
-            <div>link</div>
-            <div>link</div>
-            <div>link</div>
-            <div>link</div>
-            <div>link</div>
-            <div>button</div>
-          </div>
-        </div>
-      </header>
-      <!-- END HEADER -->
-
-      <!-- START JUMBOTRON -->
-      <div id="jumbotron" class="py-5">
-        <div class="container">
-          <div class="jumbotron--text text-center px-5 pb-5 dbg">
-            <p>Lorem, ipsum dolor.</p>
-            <h2 class="h1 family-text-title">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
-            </h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Delectus, eius!
-            </p>
-            <div class="jumbotron--button">
-              <div class="btn btn-primary">button</div>
-              <div class="btn btn-primary">button</div>
+      <div id="background-header-jumbotron">
+        <!-- START HEADER -->
+        <header id="header" class="d-flex align-items-center">
+          <div class="container d-flex">
+            <div class="header--wrap-logo">
+              <div class="logo">
+                <img src="./img/assets/logo.png" alt="logo" />
+              </div>
+            </div>
+            <div class="header--wrap-link d-flex gap-5 ms-auto">
+              <div>Home</div>
+              <div>link</div>
+              <div>link</div>
+              <div>link</div>
+              <div>link</div>
+              <div>link</div>
+              <div class="btn btn-primary my-light-button">Get a Quote</div>
             </div>
           </div>
-          <div class="jumbotron--image">
-            <img src="./img/assets/middle.png" alt="" />
+        </header>
+        <!-- END HEADER -->
+
+        <!-- START JUMBOTRON -->
+        <div id="jumbotron" class="py-5">
+          <div class="container">
+            <div class="jumbotron--text text-center px-5 pb-5">
+              <p class="orange-text fs-5 fw-semibold family-text-title">
+                Imagine, Create, Experience
+              </p>
+              <h2 class="display-1 fw-bold family-text-title">
+                We Animate <br />
+                With Ninja-Like Precision
+              </h2>
+              <p class="fs-5">
+                We are a character-driven animation studio to striving to make
+                high-quality animations.
+              </p>
+              <div class="jumbotron--button">
+                <div class="btn btn-primary my-light-button me-3">
+                  Start a Project
+                </div>
+                <div class="btn btn-primary my-dark-button">Portfolio</div>
+              </div>
+            </div>
+            <div class="jumbotron--image">
+              <img src="./img/assets/middle.png" alt="" />
+              <span class="play-logo"
+                ><i class="prova fa-solid fa-circle-play"></i
+              ></span>
+            </div>
           </div>
         </div>
       </div>
@@ -373,7 +385,7 @@
                 </div>
               </div>
             </div>
-            <div class="buttonIn">
+            <div class="buttonIn dbg">
               <input
                 class="ms-2"
                 type="text"
@@ -386,8 +398,11 @@
           <!-- END NEWSLETTER SECTION  -->
         </section>
       </main>
+
+      <!-- START FOOTER -->
       <footer class="py-5">
         <div class="container">
+          <!-- TOP FOOTER -->
           <div id="top-footer" class="d-flex justify-content-between">
             <div>logo</div>
             <div class="link-top-header d-flex gap-2">
@@ -398,7 +413,9 @@
               <div>link</div>
             </div>
           </div>
+          <!-- END TOP FOOTER -->
           <hr />
+          <!-- START BOTTOM FOOTER -->
           <div id="bottom-footer" class="d-flex justify-content-between">
             <div>Lorem ipsum dolor sit amet.</div>
             <div class="social-bottom-header d-flex gap-2">
@@ -407,8 +424,12 @@
               <div>&hearts;</div>
             </div>
           </div>
+          <!-- END BOTTOM FOOTER -->
         </div>
       </footer>
+      <!-- END FOOTER -->
+
+      <!-- RIGHT BOTTOM ARROW  -->
       <div class="go-start">&dArr;</div>
     </div>
   </body>
