@@ -234,9 +234,17 @@ header {
 #our-clients img {
   width: 100%;
 }
+/******** NEWSLETTER SECTION ********/
+#newsletter {
+  background-image: url(../img/assets/preloader.png);
+  background-repeat: no-repeat;
+
+  position: relative;
+  color: #f7f0ff;
+}
 
 .buttonIn {
-  width: 66%;
+  width: 45rem;
   position: relative;
   margin: auto;
   display: flex;
@@ -255,13 +263,13 @@ header {
 
 #clear {
   position: absolute;
-  top: 0;
+
   border-radius: 35px;
-  right: 12px;
+  right: 13px;
   z-index: 2;
   border: none;
-  top: 8px;
-  height: 41px;
+  top: 6px;
+  height: 45px;
   cursor: pointer;
   color: white;
   background-color: #1e90ff;
