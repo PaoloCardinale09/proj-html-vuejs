@@ -140,6 +140,15 @@ header {
   width: 24%;
   border-radius: 25px;
 }
+/******** SECTION OUR WORKS ********/
+#our-works {
+  color: #311852;
+}
+
+#our-works .my-light-button {
+  background-color: white;
+  border: 1px solid #ffdfee;
+}
 
 /******** SECTION OUR PROCESS ********/
 #our-process--left > img {
