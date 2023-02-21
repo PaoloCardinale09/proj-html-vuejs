@@ -37,6 +37,14 @@ h2 {
   border-radius: 50rem;
 }
 
+.my-blu-text {
+  color: #4e36dc;
+}
+
+.orange-text {
+  color: #ff7b1f;
+}
+
 /******** HEADER ********/
 header {
   height: 5rem;
@@ -85,16 +93,52 @@ header {
   outline: 0.7rem solid #9d15df;
   outline-offset: -1px;
 }
-.jumbotron--text > .orange-text {
-  color: #ff7b1f;
-}
 
 /******** SECTION OUR LOVE ********/
 #our-love {
-  background-image: url(../img/assets/smart.png);
-  background-position: top -2rem left 0;
-  background-repeat: no-repeat;
-  background-size: 40%;
+  background-image: url(../img/assets/smart.png), url(../img/assets/smart4.png);
+  background-position: -2rem 0, 2rem 10rem;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 26rem 47rem, 10rem;
+  color: #311852;
+}
+
+.our-love--single-card {
+  background: linear-gradient(#fffefd, #fdf2eb);
+  border-radius: 25px;
+  border: 1px solid #ffdfee;
+  width: 23.5%;
+}
+
+.our-love--single-card.special {
+  background: linear-gradient(#fffefd, #efebfc);
+}
+
+/******** QUICK FACTS SECTION ********/
+#quick-facts {
+  background-image: url(../img/assets/globe.png),
+    url(../img/assets/counter-bg.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25rem, auto;
+  background-position: 25rem 2rem, 0 0;
+  position: relative;
+  color: #f7f0ff;
+}
+
+.part-over-background {
+  position: absolute;
+  top: 0;
+}
+
+.part-under-background {
+  position: absolute;
+  bottom: 0;
+}
+
+.quick-facts--card {
+  border: 1px solid #f7f0ff;
+  width: 24%;
+  border-radius: 25px;
 }
 
 /******** SECTION OUR PROCESS ********/
