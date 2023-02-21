@@ -189,15 +189,47 @@ header {
   cursor: pointer;
 }
 /******** TEAM MEMBERS ********/
+#team-members {
+  background-image: url(../img/assets/shape.png), url(../img/assets/shape2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 7rem, 35rem 2rem;
+  background-size: 36rem, 36rem;
+}
 .team-members--card {
   width: 32%;
-  background-color: antiquewhite;
+  background-color: #fef5f0;
+  border-radius: 25px;
+  color: #311852;
 }
 .team-members--card > img {
   position: relative;
   top: -4rem;
 }
+.my-circle-logo {
+  border-radius: 50%;
+  background-color: white;
+  color: #4e36dc;
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: 2.5rem;
+  border: 1px solid #dedee2;
+  text-align: center;
+  margin: 0 0.25rem;
+}
 
+.team-members--card > h3 {
+  margin-top: -2rem;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.my-grey {
+  color: #9f9ea2;
+  font-size: 0.5rem;
+  margin: 0 0.25rem;
+}
+.my-v-a {
+  vertical-align: text-bottom;
+}
 /******** OUR CLIENTS ********/
 #our-clients img {
   width: 100%;
