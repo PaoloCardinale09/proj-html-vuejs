@@ -46,10 +46,12 @@
           <div class="container d-flex">
             <div class="header--wrap-logo">
               <div class="logo">
-                <img
-                  :src="'./img/assets/'+ anidioProjectcData.logo.headerLogo"
-                  alt="logo"
-                />
+                <a href="anidio.com">
+                  <img
+                    :src="'./img/assets/'+ anidioProjectcData.logo.headerLogo"
+                    alt="logo"
+                  />
+                </a>
               </div>
             </div>
             <div class="header--wrap-link d-flex gap-4 ms-auto">
@@ -57,10 +59,13 @@
                 v-for="link in anidioProjectcData.links"
                 v-show="link.header"
               >
-                {{link.text}}
+                <a :href="link.url"> {{link.text}} </a>
               </div>
 
-              <div :class="anidioProjectcData.headerButton.class">
+              <div
+                id="header-button"
+                :class="anidioProjectcData.headerButton.class"
+              >
                 {{anidioProjectcData.headerButton.text}}
               </div>
             </div>
@@ -84,10 +89,18 @@
                 high-quality animations.
               </p>
               <div class="jumbotron--button">
-                <div class="btn btn-primary my-light-button me-3">
+                <div
+                  id="jumbotron--button-light"
+                  class="btn btn-primary my-light-button me-3"
+                >
                   Start a Project
                 </div>
-                <div class="btn btn-primary my-dark-button">Portfolio</div>
+                <div
+                  id="jumbotron--button-dark"
+                  class="btn btn-primary my-dark-button"
+                >
+                  Portfolio
+                </div>
               </div>
             </div>
             <div class="jumbotron--image">
@@ -522,12 +535,12 @@
                 alt="logo"
               />
             </div>
-            <div class="link-top-header d-flex gap-4">
+            <div class="link-top-header d-flex fw-semibold gap-4">
               <div
                 v-for="link in anidioProjectcData.links"
                 v-show="link.footer"
               >
-                {{link.text}}
+                <a :href="link.url"> {{link.text}} </a>
               </div>
             </div>
           </div>
@@ -554,7 +567,9 @@
                 v-for="social in anidioProjectcData.social "
                 class="my-circle-logo"
               >
-                <i :class="social.classLogo"> </i>
+                <a id="social-logo" :href="social.url">
+                  <i :class="social.classLogo"> </i
+                ></a>
               </p>
             </div>
           </div>
