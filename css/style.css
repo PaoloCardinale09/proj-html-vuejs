@@ -26,7 +26,7 @@ h2 {
   padding: 0.5rem 1.5rem;
   background-color: #ffdfee;
   color: #1f152f;
-  border: transparent;
+  border: 1px solid transparent;
   font-weight: 600;
   border-radius: 50rem;
 }
@@ -58,7 +58,18 @@ header {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 600;
 }
+header a {
+  color: inherit;
+}
 
+header a:hover {
+  color: #ff7b1f;
+}
+#header-button:hover {
+  color: #dedee2;
+  background-color: #311852;
+  border-color: #dedee2;
+}
 #background-header-jumbotron {
   background-image: url(../img/assets/right-man.png),
     url(../img/assets/left-man.png), url(../img/assets/dots-right.png),
@@ -106,6 +117,18 @@ header {
   left: 0;
 }
 
+#jumbotron--button-dark:hover {
+  background-color: #ffdfee;
+  color: #1f152f;
+  border-color: transparent;
+}
+#jumbotron--button-light:hover {
+  color: #dedee2;
+  background-color: #270264;
+
+  border-color: #dedee2;
+}
+
 /******** SECTION OUR LOVE ********/
 #our-love {
   background-image: url(../img/assets/smart.png);
@@ -121,10 +144,17 @@ header {
   border-radius: 25px;
   border: 1px solid #ffdfee;
   width: 23.5%;
+  cursor: pointer;
+}
+.our-love--single-card:hover {
+  background: #fdf2eb;
 }
 
 .our-love--single-card.special {
   background: linear-gradient(#fffefd, #efebfc);
+}
+.our-love--single-card.special:hover {
+  background: #efebfc;
 }
 
 .our-love--spaceship {
@@ -173,6 +203,10 @@ header {
   border: 1px solid #ffdfee;
 }
 
+#our-works--button:hover {
+  background-color: #dedee2;
+  color: #231d6f;
+}
 /******** SECTION OUR PROCESS ********/
 #our-process--left > img {
   height: 43rem;
@@ -187,6 +221,7 @@ header {
   right: -44rem;
   bottom: 6rem;
   transform: scaleX(1.5);
+  z-index: -10;
 }
 .our-process--spaceship > img {
   height: 8rem;
@@ -221,6 +256,7 @@ header {
   line-height: 3rem;
   cursor: pointer;
 }
+
 /******** TEAM MEMBERS ********/
 #team-members {
   background-image: url(../img/assets/shape.png), url(../img/assets/shape2.png);
@@ -249,7 +285,11 @@ header {
   text-align: center;
   margin: 0 0.25rem;
 }
-
+.my-circle-logo:hover {
+  color: white;
+  background-color: #ff7b1f;
+  border-color: transparent;
+}
 .team-members--card > h3 {
   margin-top: -2rem;
   font-family: "Chakra Petch", sans-serif;
@@ -263,6 +303,12 @@ header {
 .my-v-a {
   vertical-align: text-bottom;
 }
+.my-arrow:hover {
+  background-color: #ff7b1f;
+  color: white;
+  border-color: transparent;
+}
+
 /******** OUR CLIENTS ********/
 #our-clients img {
   width: 100%;
@@ -296,7 +342,6 @@ header {
 
 #clear {
   position: absolute;
-
   border-radius: 35px;
   right: 13px;
   z-index: 2;
@@ -304,11 +349,28 @@ header {
   top: 6px;
   height: 45px;
   cursor: pointer;
-  color: white;
-  background-color: #1e90ff;
   transform: translateX(4px);
+  background-color: #ffdfee;
+  color: #1f152f;
+}
+#clear:hover {
+  background-color: #270264;
+  color: #f7f0ff;
+}
+/********  FOOTER ********/
+#top-footer a {
+  color: inherit;
 }
 
+#top-footer a:hover {
+  color: #ff7b1f;
+}
+.bottom-footer--social-icon .my-circle-logo:hover #social-logo {
+  color: white;
+}
+footer .my-circle-logo {
+  cursor: pointer;
+}
 /********  bottom right arrow ********/
 
 .go-start {
@@ -322,6 +384,7 @@ header {
   text-align: 2rem;
   text-align: center;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .go-start > a > i {

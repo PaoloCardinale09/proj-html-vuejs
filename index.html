@@ -46,7 +46,7 @@
           <div class="container d-flex">
             <div class="header--wrap-logo">
               <div class="logo">
-                <a href="anidio.com">
+                <a :href="anidioProjectcData.logo.url">
                   <img
                     :src="'./img/assets/'+ anidioProjectcData.logo.headerLogo"
                     alt="logo"
@@ -257,7 +257,9 @@
               <img src="./img/assets/work4.png" alt="" />
             </div>
             <div class="text-center py-5">
-              <div class="btn my-light-button">See Our Work</div>
+              <div id="our-works--button" class="btn my-light-button">
+                See Our Work
+              </div>
             </div>
           </div>
         </section>
@@ -530,10 +532,12 @@
           <!-- TOP FOOTER -->
           <div id="top-footer" class="d-flex justify-content-between">
             <div>
-              <img
-                :src="'./img/assets/'+ anidioProjectcData.logo.footerLogo"
-                alt="logo"
-              />
+              <a :href="anidioProjectcData.logo.url">
+                <img
+                  :src="'./img/assets/'+ anidioProjectcData.logo.footerLogo"
+                  alt="logo"
+                />
+              </a>
             </div>
             <div class="link-top-header d-flex fw-semibold gap-4">
               <div

@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      // DATI DELL' AZIENDA MADRE
       mainCompanyData: {
         generics: {
           name: "Softivus",
@@ -15,11 +16,12 @@ createApp({
 
         rightReserved: "All right reserved.",
       },
-
+      // DATI DEL PROGETTO ANIDIO
       anidioProjectcData: {
         logo: {
           footerLogo: "footer-logo.png",
           headerLogo: "logo.png",
+          url: "www.anidio.com",
         },
 
         headerButton: {
@@ -29,15 +31,15 @@ createApp({
 
         social: {
           facebook: {
-            url: "#",
+            url: "https://it-it.facebook.com/",
             classLogo: "fa-brands fa-facebook-f",
           },
           twitter: {
-            url: "#",
+            url: "https://twitter.com/",
             classLogo: "fa-brands fa-twitter",
           },
           instagram: {
-            url: "#",
+            url: "https://www.instagram.com/",
             classLogo: "fa-brands fa-instagram",
           },
         },
@@ -45,50 +47,50 @@ createApp({
         links: [
           {
             text: "Home",
-            url: "#",
+            url: "home.com",
             header: true,
             footer: false,
           },
           {
             text: "About Us",
-            url: "#",
+            url: "AboutUs.com",
             header: true,
             footer: true,
           },
 
           {
             text: "Portfolio",
-            url: "#",
+            url: "Portfolio.com",
             header: true,
             footer: true,
           },
           {
             text: "Our Process",
-            url: "#",
+            url: "OurProcess.com",
             header: true,
             footer: false,
           },
           {
             text: "Pricing",
-            url: "#",
+            url: "Pricing.com",
             header: true,
             footer: true,
           },
           {
             text: "Blog",
-            url: "#",
+            url: "Blog.com",
             header: true,
             footer: false,
           },
           {
             text: "Contact",
-            url: "#",
+            url: "Contact.com",
             header: true,
             footer: true,
           },
           {
             text: "Career",
-            url: "#",
+            url: "Career.com",
             header: false,
             footer: true,
           },
