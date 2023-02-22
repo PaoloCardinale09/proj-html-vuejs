@@ -46,17 +46,23 @@
           <div class="container d-flex">
             <div class="header--wrap-logo">
               <div class="logo">
-                <img src="./img/assets/logo.png" alt="logo" />
+                <img
+                  :src="'./img/assets/'+ anidioProjectcData.logo.headerLogo"
+                  alt="logo"
+                />
               </div>
             </div>
-            <div class="header--wrap-link d-flex gap-5 ms-auto">
-              <div>Home</div>
-              <div>link</div>
-              <div>link</div>
-              <div>link</div>
-              <div>link</div>
-              <div>link</div>
-              <div class="btn btn-primary my-light-button">Get a Quote</div>
+            <div class="header--wrap-link d-flex gap-4 ms-auto">
+              <div
+                v-for="link in anidioProjectcData.links"
+                v-show="link.header"
+              >
+                {{link.text}}
+              </div>
+
+              <div :class="anidioProjectcData.headerButton.class">
+                {{anidioProjectcData.headerButton.text}}
+              </div>
             </div>
           </div>
         </header>
@@ -510,34 +516,45 @@
         <div class="container">
           <!-- TOP FOOTER -->
           <div id="top-footer" class="d-flex justify-content-between">
-            <div><img src="./img/assets/footer-logo.png" alt="logo" /></div>
-            <div class="link-top-header d-flex gap-2">
-              <div>link</div>
-              <div>link</div>
-              <div>link</div>
-              <div>link</div>
-              <div>link</div>
+            <div>
+              <img
+                :src="'./img/assets/'+ anidioProjectcData.logo.footerLogo"
+                alt="logo"
+              />
+            </div>
+            <div class="link-top-header d-flex gap-4">
+              <div
+                v-for="link in anidioProjectcData.links"
+                v-show="link.footer"
+              >
+                {{link.text}}
+              </div>
             </div>
           </div>
           <!-- END TOP FOOTER -->
           <hr />
           <!-- START BOTTOM FOOTER -->
           <div id="bottom-footer" class="d-flex justify-content-between">
+            <!-- copyright and rights -->
             <div>
-              Copyright &copy; 2022 <a href="#">Softivus.</a> All right
-              reserved.
+              {{mainCompanyData.copyright.text +
+              mainCompanyData.copyright.year}}
+
+              <a :href="mainCompanyData.generics.url">
+                {{mainCompanyData.generics.name}}.</a
+              >
+              {{mainCompanyData.rightReserved}}
             </div>
+
+            <!-- SOCIAL ICONS -->
             <div
               class="bottom-footer--social-icon d-flex justify-content-center mb-4"
             >
-              <p class="my-circle-logo">
-                <i class="fa-brands fa-facebook-f"></i>
-              </p>
-              <p class="my-circle-logo">
-                <i class="fa-brands fa-twitter"></i>
-              </p>
-              <p class="my-circle-logo">
-                <i class="fa-brands fa-instagram"></i>
+              <p
+                v-for="social in anidioProjectcData.social "
+                class="my-circle-logo"
+              >
+                <i :class="social.classLogo"> </i>
               </p>
             </div>
           </div>
@@ -552,7 +569,6 @@
           <i class="fa-solid fa-arrow-up"></i>
         </a>
       </div>
-      <p>{{mainCompanyData.rightReserved}}</p>
     </div>
   </body>
 </html>

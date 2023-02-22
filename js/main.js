@@ -8,8 +8,8 @@ createApp({
           name: "Softivus",
           url: "#",
         },
-        copiright: {
-          text: "Copiright ©",
+        copyright: {
+          text: "Copyright ©",
           year: 2023,
         },
 
@@ -27,61 +27,75 @@ createApp({
           text: "Get a Quote",
         },
 
-        social:{
-            facebook:{
-                url:"#",
-                classLogo: "fa-brands fa-facebook-f",
-            },
-            twitter:{
-                url:"#",
-                classLogo: "fa-brands fa-twitter",
-            },
-            instagram:{
-                url:"#",
-                classLogo: "fa-brands fa-instagram",
-            },
-        }
+        social: {
+          facebook: {
+            url: "#",
+            classLogo: "fa-brands fa-facebook-f",
+          },
+          twitter: {
+            url: "#",
+            classLogo: "fa-brands fa-twitter",
+          },
+          instagram: {
+            url: "#",
+            classLogo: "fa-brands fa-instagram",
+          },
+        },
 
-        Links: {
-          homePage: {
+        links: [
+          {
             text: "Home",
             url: "#",
             header: true,
             footer: false,
           },
+          {
+            text: "About Us",
+            url: "#",
+            header: true,
+            footer: true,
+          },
 
-          portfolio: {
+          {
             text: "Portfolio",
             url: "#",
             header: true,
             footer: true,
           },
-          ourProcess: {
+          {
             text: "Our Process",
             url: "#",
             header: true,
             footer: false,
           },
-          pricing: {
+          {
             text: "Pricing",
             url: "#",
             header: true,
             footer: true,
           },
-          blog: {
+          {
             text: "Blog",
             url: "#",
             header: true,
             footer: false,
           },
-          contact: {
+          {
             text: "Contact",
             url: "#",
             header: true,
             footer: true,
           },
-        },
+          {
+            text: "Career",
+            url: "#",
+            header: false,
+            footer: true,
+          },
+        ],
       },
     };
   },
+
+  computed: {},
 }).mount("#app");
